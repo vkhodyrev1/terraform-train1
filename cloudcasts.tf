@@ -1,20 +1,9 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
+module "vpc" {
+  source = "./Lab1/vpc_lab"
 
-# Configure the AWS Provider
-provider "aws" {
-  # Configuration options
-  profile = "cloudecasts"
-  region  = "us-east-2"
-}
+  infra_env = var.infra_env
 
-# Create a VPC
-resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16"
+  # Note we are /17, not /16
+  # So we're only using half of the available
+  vpc_cidr = "10.0.0.0/17"
 }
