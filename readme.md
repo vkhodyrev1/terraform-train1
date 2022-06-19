@@ -1,1 +1,1 @@
-Here is vpc medule - task of Academy DevOps
+Here is vpc module - task of Academy DevOps
