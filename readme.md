@@ -1,0 +1,1 @@
+Here is vpc medule - task of Academy DevOps
