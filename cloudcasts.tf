@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "./Lab1/vpc_lab"
+  source = "./vpc_lab"
 
   infra_env = var.infra_env
 
